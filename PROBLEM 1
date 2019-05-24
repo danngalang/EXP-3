@@ -1,0 +1,56 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main ()
+{
+	int I, S, L, TOTAL;
+	float Ave;
+	int num[10];
+	
+	cout << "Kindly enter the ten numbers:" << endl;
+		cout << " " << endl;
+	
+	for (I = 0; I < 10; I++)
+	num[I] = 0;
+	
+	for (I = 0; I < 10; I++)
+	cin >> num[I];
+	
+	
+	L = num[0];
+	for (I = 0; I < 10; I++)
+	{
+		if (L < num [I])
+		L = num[I];
+	}
+	
+	S = num[0];
+	
+	for (I = 0; I < 10; I++)
+	{
+		if ( S > num[I])
+		S = num[I];
+	}
+	
+	TOTAL = 0;
+		for (I = 0; I < 10; I++)
+	
+		TOTAL = TOTAL + num[I];
+		
+		Ave = TOTAL/10;
+	
+	
+		cout << " " << endl;
+	cout << "The Largest Integer is: " << L << endl;
+		cout << " " << endl;
+	cout << "The Smallest Integer is: " << S << endl;
+		cout << " " << endl;
+	cout << "The Sum of all integers: " << TOTAL << endl;
+		cout << " " << endl;
+	cout << "The Average of ten Integers is: " << Ave << endl;
+	
+	_getch();
+	return 0;
+}
