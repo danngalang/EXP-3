@@ -1,0 +1,38 @@
+#include <iostream>
+#include <conio.h>
+#include <cstring>
+
+using namespace std;
+int main()
+{
+	int a,s;
+	char arr[100], temp;
+
+	cout << "Enter char array: ";
+	cin >> arr;
+	
+	cout << "Reverse of char array: ";
+		
+	int size = strlen(arr);
+	for (a = 0; a < size; a++)
+	{
+		for (s = a + 1; s < size; s++)
+		{
+			if (arr[a] > arr[s])             
+			{
+				temp = arr[a];                
+				arr[a] = arr[s];
+				arr[s] = temp;
+			}
+		}
+	 }
+
+	for(a = 0; a < size; a++)
+	{
+		cout << arr[a];
+	}
+	cout << " " << endl;
+	cout << "Size of the array is: " << strlen(arr) + 1;
+_getch();
+return 0;
+}
