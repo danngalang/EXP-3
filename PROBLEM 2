@@ -1,0 +1,53 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+	int Day;
+	int PA[7];
+	int PB[7];
+	int PC[7];
+	
+	cout<< "Enter all temperature for a week of Province A\n" << endl;
+
+	for(Day =0; Day<7; Day++){
+		
+		cout<<"Province A, Day "<<Day+1<<": "; cin>> PA [Day];
+	}
+	
+	cout<< " \n";
+	cout<< "Enter all temperature for a week of Province B\n" << endl;
+	
+	for(int Day =0; Day<7; Day++){
+		
+		
+		cout<<"Province B, Day "<<Day+1<<": "; cin>> PB [Day];
+	}
+	
+	cout<< " \n";
+	cout<< "Enter all temperature for a week of Province C\n" << endl;
+
+	for(Day =0; Day<7; Day++){
+		
+		cout<<"Province C, Day "<<Day+1<<": "; cin>> PC [Day];
+		
+	}
+	
+	cout<<"\nThe temperature of Province A, Province B and Province C for a week are:";
+	cout<< " \n" << endl;
+	
+	for(Day=0; Day<7; Day++){
+		cout<<"Province A, Day " <<Day+1<<" = "<< PA[Day]<<endl;
+	}
+	for(Day=0; Day<7; Day++){
+		cout<<"Province B, Day " <<Day+1<<" = "<< PB[Day]<<endl;
+	}
+	for(Day=0; Day<7; Day++){
+		cout<<"Province C, Day " <<Day+1<<" = "<< PC[Day]<<endl;
+	}
+	
+	_getch();
+	return 0;
+}
